@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T E S L A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #1c1c1e;
+      color: white;
+      overflow: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('Xx.gif'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      z-index: 0;
+    }
+
+    header,
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      padding: 0 50px;
+      /* position: relative;  
+      /* z-index: 1;         */
+    }
+
+    .left, .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .left h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .left h1 span {
+      color: #00bfff;
+    }
+
+    .left p {
+      max-width: 400px;
+      margin-bottom: 30px;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .left button {
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .left button:hover {
+      background-color: #00bfff;
+      border-color: #00bfff;
+    }
+
+    .right img {
+      max-height: 70vh;
+      filter: brightness(1.2) contrast(1.1);
+    }
+
+    .info-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      width: 40%;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <div class="logo">TESLA</div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">GAMES</a></li>
+        <li><a href="#">GIVEAWAY</a></li>
+        <li><a href="#">ROLES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <h4>HERE AND NOW</h4>
+      <h1><span>T</span>ESLA</h1>
+      <p>
+        Tesla is a fun-packed server full of games, events, and a friendly community where the excitement never stops!
+      </p>
+      <button>LET'S GO</button>
+    </div>
+
+    <div class="right">
+      <div class="info-boxes">
+        <div class="info-box">
+          <strong>DISCORD SERVER</strong><br />
+          The ultimate hub for events, games, and nonstop fun!
+        </div>
+        <div class="info-box">
+          <strong>EXPLORE</strong><br />
+          Exciting events & giveaways 
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
